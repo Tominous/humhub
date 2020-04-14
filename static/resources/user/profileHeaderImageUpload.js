@@ -17,7 +17,7 @@ $(document).on('humhub:ready', function () {
                 url: profileImageUploaderUrl,
                 dataType: 'json',
                 singleFileUploads: true,
-                //formData: {'CSRF_TOKEN': csrfValue},
+                formData: {'CSRF_TOKEN': csrfValue},
                 limitMultiFileUploads: 1,
                 progressall: function (e, data) {
                     var progress = parseInt(data.loaded / data.total * 100, 10);
@@ -59,7 +59,7 @@ $(document).on('humhub:ready', function () {
                 url: profileHeaderUploaderUrl,
                 dataType: 'json',
                 singleFileUploads: true,
-                //formData: {'CSRF_TOKEN': csrfValue},
+                formData: {'CSRF_TOKEN': csrfValue},
                 limitMultiFileUploads: 1,
                 progressall: function (e, data) {
                     var progress = parseInt(data.loaded / data.total * 100, 10);
