@@ -137,7 +137,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-shell');
 
-    //grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', ['watch']);
     grunt.registerTask('build-assets', ['shell:buildAssets']);
     grunt.registerTask('build-search', ['shell:buildSearch']);
 
